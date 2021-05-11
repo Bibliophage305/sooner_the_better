@@ -1,0 +1,107 @@
+html {
+    height: 98%;
+    background-color: black;
+}
+body {
+    height: 100%;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+.release-date {
+    padding: 10px;
+    padding-right: 30px;
+    justify-content: center;
+    text-align: right;
+    color: white;
+    flex-shrink: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container {
+    padding: 1em;
+    /* padding-bottom: 20px;
+    padding-top: 20px; */
+    justify-content: center;
+    display: flex;
+}
+
+.follow-container {
+    padding-top: 10px;
+}
+
+#bottom-links {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: 25%;
+    margin-top:auto;
+}
+
+.link-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.logo {
+    padding: 1em;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    min-width: 0;
+    max-height: 25%;
+    flex-shrink:2;
+}
+
+.album-art {
+    width: auto;
+    height: 30%;
+    object-fit: contain;
+    min-width: 0;
+    flex-shrink: 3;
+    flex-grow: 1;
+}
+
+#video-wrapper {
+    width: auto;
+    height: 30%;
+    object-fit: contain;
+    min-width: 0;
+    flex-shrink: 3;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#youtube {
+    height: min(100%, 350px);
+    width: min(100%, 600px);
+}
+
+.release-date {
+    align-self: center;
+}
+
+@media (orientation: landscape) {
+    .release-date {
+        font-size: 5vh;
+    }
+}
+  
+  @media (orientation: portrait) {
+    .release-date {
+        font-size: 5vw;
+    }
+}
