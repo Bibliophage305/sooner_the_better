@@ -42,17 +42,6 @@ body {
     line-height: 1.5;
 }
 
-.content-container {
-    justify-content: center;
-    display: flex;
-}
-
-/* .footer {
-    padding: 1em;
-    align-items: center;
-    margin-top:auto;
-} */
-
 .flex-row {
     display: flex;
     width: auto;
@@ -74,8 +63,4 @@ body {
 
 .pb-3 {
     padding-bottom: 3rem !important;
-}
-
-span.line {
-    display: inline-block;
 }
