@@ -4,6 +4,17 @@ html {
 }
 body {
     height: 100%;
+    font-size: 5vmin;
+}
+
+@font-face {
+    font-family: Exthing;
+    src: url("resources/fonts/Exthing.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url("resources/fonts/Gotham-Medium.otf") format("opentype");
 }
 
 #page-container {
@@ -16,42 +27,49 @@ body {
     align-content: center;
 }
 
-
-.release-date {
+.top-header {
     padding: 10px;
     padding-right: 30px;
-    justify-content: center;
-    text-align: right;
+    text-align: center;
     color: white;
     flex-shrink: 2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Exthing;
+    font-size: 2em;
+}
+
+.release-date {
+    text-align: center;
+    color: white;
+    flex-shrink: 2;
+    font-family: Gotham;
 }
 
 .content-container {
     padding: 1em;
-    /* padding-bottom: 20px;
-    padding-top: 20px; */
     justify-content: center;
     display: flex;
 }
 
-.follow-container {
-    padding-top: 10px;
-}
-
-#bottom-links {
+.footer {
     padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-    margin-left: 25%;
+    align-items: center;
     margin-top:auto;
 }
 
-.link-icon {
+.flex-row {
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-item {
     height: 50px;
     width: 50px;
+}
+
+.white {
+    color: white;
 }
 
 .logo {
@@ -90,18 +108,14 @@ body {
     width: min(100%, 600px);
 }
 
-.release-date {
-    align-self: center;
-}
-
-@media (orientation: landscape) {
-    .release-date {
-        font-size: 5vh;
+/* @media (orientation: landscape) {
+    .body {
+        font-size: 10vh;
     }
 }
   
-  @media (orientation: portrait) {
-    .release-date {
-        font-size: 5vw;
+@media (orientation: portrait) {
+    .body {
+        font-size: 10vw;
     }
-}
+} */
