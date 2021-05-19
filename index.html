@@ -32,9 +32,23 @@
                 <img src="resources/logos_banners/SB_FB/SB_Facebook_cover.png">
             </div>
             <div class="flex-row">
-                <div class="release-date">
+                <div class="release-date col-6">
                     <span>Send Help<br>Available 20th May</span>
                 </div>
+                <div class="embedsocial-hashtag col-3" data-ref="d42354bcb765bb939a4151307bc7eb506654cfd8" ></div>
+                <script>
+                    (function(d, s, id) {
+                        var js;
+                        if (d.getElementById(id)) {
+                            return;
+                        }
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "https://embedsocial.com/cdn/ht.js";
+                        d.getElementsByTagName("head")[0].appendChild(js);
+                    }(document, "script", "EmbedSocialHashtagScript"));
+                </script>
+                <div class="col-3"></div>
             </div>
             <div class="flex-row pb-3 gap-5">
                 <a href="https://www.facebook.com/soonerthebetterofficial" id="facebook" class="link" target="_blank">
@@ -53,3 +67,12 @@
         </div>
     </body>
 </html>
+
+<script>
+    window.onload = function() {
+        let frameElement = document.getElementById("embedIFrame_d42354bcb765bb939a4151307bc7eb506654cfd8");
+        let doc = frameElement.contentDocument;
+        doc.body.innerHTML = doc.body.innerHTML + '<style>#es-header {display: none;}</style>';
+        console.log(doc);
+    }
+</script>
