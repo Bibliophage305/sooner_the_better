@@ -1,10 +1,18 @@
+:root {
+    --dark: #06090e;
+    --grey: #3f606b;
+    --dark-blue: #003783;
+    --light-blue: #006083;
+}
+
 html {
     height: 98%;
-    background-color: black;
+    background-color: var(--dark);
 }
+
 body {
     height: 100%;
-    font-size: 5vh;
+    font-size: 5vmin;
 }
 
 @font-face {
@@ -35,16 +43,20 @@ body {
     align-content: center;
 }
 
-.top-header {
-    text-align: center;
-    color: white;
+#logo {
+    max-width: 70vw;
+    max-height: 30vh;
+}
+
+.font-primary {
     font-family: Exthing;
-    font-size: 1.5em;
+}
+
+.font-secondary {
+    font-family: Gotham;
 }
 
 .release-date {
-    color: white;
-    font-family: Gotham;
     font-size: 0.8em;
 }
 
@@ -56,6 +68,10 @@ body {
     display: flex;
     width: auto;
     align-items: center;
+}
+
+.flex-vertical {
+    flex-direction: column;
 }
 
 .justify-center {
@@ -74,8 +90,24 @@ body {
     gap: 5rem;
 }
 
-.white {
+.colour-white {
     color: white;
+}
+
+.colour-dark {
+    color: var(--dark);
+}
+
+.colour-grey {
+    color: var(--grey);
+}
+
+.colour-light-blue {
+    color: var(--light-blue);
+}
+
+.colour-dark-blue {
+    color: var(--dark-blue);
 }
 
 .pt-1 {
