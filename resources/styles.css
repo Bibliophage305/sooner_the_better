@@ -15,6 +15,10 @@ body {
     font-size: 5vmin;
 }
 
+.preload * {
+    transition: none !important;
+}
+
 @font-face {
     font-family: Exthing;
     src: url("fonts/Exthing.otf") format("opentype");
@@ -107,6 +111,18 @@ body {
 }
 
 .colour-dark-blue {
+    color: var(--dark-blue);
+}
+
+i {
+    transition: color .2s;
+}
+
+#listen-icons i:hover {
+    color: var(--light-blue);
+}
+
+#footer i:hover {
     color: var(--dark-blue);
 }
 

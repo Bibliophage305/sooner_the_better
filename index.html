@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="resources/styles.css">
         <link rel="stylesheet" href="resources/fontawesome/css/all.css">
     </head>
-    <body>
+    <body class="preload">
         <div id="page-container">
             <div class="flex-row"></div>
             <div class="flex-row justify-center pt-3 pb-3">
@@ -35,7 +35,7 @@
             <div class="flex-row justify-center">
                 <div class="release-date font-secondary align-right col-6 pr-3 colour-white">
                     <span>Send Help<br>Available Now</span>
-                    <div class="flex-row justify-right gap-3 pt-1">
+                    <div id="listen-icons" class="flex-row justify-right gap-3 pt-1">
                         <a href="https://open.spotify.com/album/5IJ5Y0YwZNgbqWPZWbgyac" id="spotify" target="_blank">
                             <i class="fab fa-spotify colour-white"></i>
                         </a>
@@ -55,7 +55,7 @@
                     
                 </div>
             </div>
-            <div class="flex-row justify-center gap-5">
+            <div id="footer" class="flex-row justify-center gap-5">
                 <a href="https://www.facebook.com/soonerthebetterofficial" id="facebook" target="_blank">
                     <i class="fab fa-facebook colour-grey"></i>
                 </a>
@@ -72,4 +72,9 @@
             <div class="flex-row pb-3"></div>
         </div>
     </body>
+    <script>
+        window.onload = function() {
+            document.getElementsByTagName("body")[0].classList.remove("preload");
+        }
+    </script>
 </html>
