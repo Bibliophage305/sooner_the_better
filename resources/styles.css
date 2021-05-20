@@ -43,18 +43,31 @@ body {
 }
 
 .release-date {
-    text-align: right;
     color: white;
     font-family: Gotham;
     font-size: 0.8em;
-    line-height: 1.5;
+}
+
+.align-right {
+    text-align: right;
 }
 
 .flex-row {
     display: flex;
     width: auto;
     align-items: center;
+}
+
+.justify-center {
     justify-content: center;
+}
+
+.justify-right {
+    justify-content: flex-end;
+}
+
+.gap-3 {
+    gap: 3rem;
 }
 
 .gap-5 {
@@ -65,10 +78,18 @@ body {
     color: white;
 }
 
+.pt-1 {
+    padding-top: 1rem;
+}
+
 .pt-3 {
-    padding-top: 3rem !important;
+    padding-top: 3rem;
+}
+
+.pr-3 {
+    padding-right: 3rem;
 }
 
 .pb-3 {
-    padding-bottom: 3rem !important;
+    padding-bottom: 3rem;
 }
